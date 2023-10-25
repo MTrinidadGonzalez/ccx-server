@@ -1,0 +1,219 @@
+[
+    {
+        "code": "product1",
+        "category": "remeras",
+        "description": "Remera musculosa lisa",
+        "img": "https://i.pinimg.com/564x/d5/b0/c3/d5b0c3a65b87289acc77f3db919b9d3a.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+        "color":"negro",
+        "talle":"xl"
+    },
+    {
+        "code": "product2",
+        "category": "remeras",
+        "description": "Pupera musculosa lisa",
+        "img": "https://i.pinimg.com/564x/7a/91/a1/7a91a164d0b7f9d620716478eb5b18a5.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+          "color":"blanco",
+        "talle":"xs"
+    },
+     {
+        "code": "product3",
+        "category": "remeras",
+        "description": "Remera lisa lanilla manga corta media estación",
+        "img": "https://i.pinimg.com/564x/97/7e/f5/977ef5da3b263f330b6cc4040a2ba6dc.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"beige",
+        "talle":"xl"
+    },
+     {
+        "code": "product4",
+        "category": "remeras",
+        "description": "Remera lisa suelta manga corta",
+        "img": "https://i.pinimg.com/564x/6a/b9/46/6ab946ae0935613c1fad26b3ee72251b.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"negro",
+        "talle":"l"
+    },
+    {
+        "code": "product5",
+        "category": "remeras",
+        "description": "Remera lisa manga corta, borde negro",
+        "img": "https://i.pinimg.com/564x/ac/a3/f3/aca3f3962e7b002596f61e35b0f2ce16.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"violeta",
+        "talle":"m"
+    },
+     {
+        "code": "product6",
+        "category": "remeras",
+        "description": "Remera lisa manga corta, cuello chomba",
+        "img": "https://i.pinimg.com/564x/ce/ea/65/ceea65a64fabc3f1a17533b78219d059.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"gris",
+        "talle":"m"
+    },
+         {
+        "code": "product7",
+        "category": "pantalones",
+        "description": "Pantalon elephan tiro alto",
+        "img": "https://i.pinimg.com/564x/bd/24/32/bd24324687f01fd90d7562291556d455.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"azul",
+        "talle":"s"
+    },
+     {
+        "code": "product8",
+        "category": "pantalones",
+        "description": "Pantalon elephan tiro alto cuadriculado",
+        "img": "https://i.pinimg.com/564x/a5/55/c0/a555c03dd23da5a5b50665b2783210d9.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"crema",
+        "talle":"m"
+    },
+    {
+        "code": "product9",
+        "category": "pantalones",
+        "description": "Pantalon jogguin liso tiro alto",
+        "img": "https://i.pinimg.com/564x/4e/94/77/4e9477670022cd6da537c1cc5c6b7b7d.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"rojo",
+        "talle":"xl"
+    },
+       {
+        "code": "product10",
+        "category": "pantalones",
+        "description": "Pantalon jogguin liso tiro alto babucha",
+        "img": "https://i.pinimg.com/564x/51/1a/b6/511ab66fc8ab51e660da1165d37491b0.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"gris",
+        "talle":"m"
+    },
+     {
+        "code": "product11",
+        "category": "pantalones",
+        "description": "Pantalon cargo bolsillos",
+        "img": "https://i.pinimg.com/564x/48/0c/d5/480cd5578f878a94507e9eab2aa6b5fe.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"verde",
+        "talle":"xl"
+    },
+       {
+        "code": "product12",
+        "category": "abrigos",
+        "description": "Buzo cangu capucha doble frizza",
+        "img": "https://i.pinimg.com/564x/a0/08/0f/a0080f40fabc9ab3b8d91ff9329b74a0.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"crema",
+        "talle":"xs"
+    },
+     {
+        "code": "product13",
+        "category": "abrigos",
+        "description": "Pullover abrigado liso sin capucha tejido industrial",
+        "img": "https://i.pinimg.com/564x/fe/2e/91/fe2e919ba994f0fd0520354bfd9485ac.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"rosa",
+        "talle":"xs"
+    },
+    {
+        "code": "product14",
+        "category": "abrigos",
+        "description": "Pullover abrigado liso sin capucha tejido industrial suelto",
+        "img": "https://i.pinimg.com/564x/5a/b4/7e/5ab47e0bb9d4e3a38c9d16755e2dd283.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"azul",
+        "talle":"m"
+    },
+     {
+        "code": "product15",
+        "category": "abrigos",
+        "description": "Buzo peluche abrigado con capucha",
+        "img": "https://i.pinimg.com/564x/bf/d3/26/bfd326ed550e6e8e8a8afee2d3167991.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"gris",
+        "talle":"xl"
+    },
+     {
+        "code": "product16",
+        "category": "abrigos",
+        "description": "Campera peluche bicolor",
+        "img": "https://i.pinimg.com/564x/3a/e0/f0/3ae0f00fd98208a9564d9d929dee1ede.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"amarillo",
+        "talle":"l"
+    },    
+     {
+        "code": "product17",
+        "category": "accesorios",
+        "description": "Medias media caña, lisa con corazón",
+        "img": "https://i.pinimg.com/564x/37/a7/3e/37a73e5cfd0dd14a4f7958abb244f7b1.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+        "color":"ninguno",
+         "talle":"l"
+    },
+     {
+        "code": "product18",
+        "category": "accesorios",
+        "description": "Medias media caña, lisa con conejito",
+        "img": "https://i.pinimg.com/564x/90/5a/42/905a425ee4b1f70e38c2dddb3fddcc21.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10,
+         "color":"crema"
+    },       
+         {
+        "code": "product19",
+        "category": "accesorios",
+        "description": "Kit de anillos dorados",
+        "img": "https://i.pinimg.com/564x/17/83/eb/1783eb7780f1fc540aaeaffe4a2679cf.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10
+    },   
+        {
+        "code": "product20",
+        "category": "accesorios",
+        "description": "Gargantilla dorada con dijes de colores",
+        "img": "https://i.pinimg.com/564x/64/db/e4/64dbe4e0dd41536564db5e463a4b0613.jpg",
+        "price": 5000,
+        "status": true,
+        "stock": 10
+    }
+    
+    
+]
