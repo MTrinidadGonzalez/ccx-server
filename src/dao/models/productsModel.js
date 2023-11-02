@@ -8,7 +8,7 @@ const schema= new mongoose.Schema({
     price:Number,
     category:{
         type:String,
-        enum:["remeras","pantalones", "abrigos","accesorios","articulos de belleza","articulos para el hogar"]
+        enum:["remeras","pantalones", "abrigos","accesorios","articulos de belleza","articulos para el hogar","gimnasia","tecnologia"]
     } ,
     stock:{
         type:Number,
