@@ -30,7 +30,7 @@ const app= express()
 app.use(attachLogger)
 const port =config.app.PORT
 
-
+/*
 app.use(cors(
     {
         origin: true,
@@ -38,7 +38,13 @@ app.use(cors(
         credentials: true,
         methods: ['GET', 'POST','PUT','DELETE']
     }
-))
+))*/
+app.use(cors({
+  //  origin: 'https://ccx-client.onrender.com', // o '*' para permitir cualquier origen
+  origin: '*', 
+  credentials: true,
+    methods: ['GET', 'POST', 'PUT', 'DELETE']
+}));
 
 const connection= mongoose.connect(config.mongo.URL)
 app.use(cookieParser())
