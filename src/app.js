@@ -41,7 +41,7 @@ app.use(cors(
 ))*/
 app.use(cors({
   //  origin: 'https://ccx-client.onrender.com', // o '*' para permitir cualquier origen
-  origin: '*', 
+  origin: true, 
   credentials: true,
     methods: ['GET', 'POST', 'PUT', 'DELETE']
 }));
