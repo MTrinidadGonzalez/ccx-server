@@ -15,7 +15,8 @@ import ProductRouter from './routers/products.router.js'
 import moksRouter from '../src/moks/routermoks/moks.products.router.js'
 import loggerRouter from './routers/loggerRouter/logger.router.js'
 import EmailRouter from './routers/email.router.js'
-import DocumentsRouter from './routers/documents.router.js'
+//import DocumentsRouter from './routers/documents.router.js'
+import documentsRouter from '../src/routers/documents.router.js'
 
 import ChatsRoute from './routers/chats.routers.js'
 
@@ -90,8 +91,9 @@ app.use('/docs' , swaggerUiExpress.serve, swaggerUiExpress.setup(specifications)
 
 
 //rutas
-const documentsRouter= new DocumentsRouter()
-app.use('/api/documents', documentsRouter.getRouter())
+//const documentsRouter= new DocumentsRouter()
+//app.use('/api/documents', documentsRouter.getRouter())
+app.use('/api/documents', documentsRouter)
 app.use('/', loggerRouter)
 const userRouter= new UserRouter()
 app.use('/api/users', userRouter.getRouter())
