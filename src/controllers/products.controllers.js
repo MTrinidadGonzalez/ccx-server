@@ -44,13 +44,14 @@ const postProduct= async(req,res)=>{
                 status:400
             })
         } 
+        const urlDeploy= 'https://ccx-server.onrender.com'
        const imgFileName=req.file.filename
         const product= {
             title,
             description,
             price,
             category,
-            img: `${urlDocs}/${imgFileName}?folder=products`,
+            img: `${urlDeploy}/api/documents/${imgFileName}?folder=products`,
             talle,
             color,
             owner:useremail
