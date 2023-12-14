@@ -32,7 +32,8 @@ const port =config.app.PORT
 
 app.use(cors(
     {
-        origin: true,
+       // origin: true,
+       origin:'https://ccx-client.onrender.com',
         credentials: true,
         methods: ['GET', 'POST','PUT','DELETE']
     }
@@ -47,7 +48,7 @@ app.use(express.static(`${__dirname}/public`))
 const server= app.listen(port, ()=> console.log(`listening on ${port} - ${config.mode.mode}`))
 const io  = new Server(server,{
     cors:{
-        origin: 'http://localhost:5173',
+        origin: 'https://ccx-client.onrender.com',
         methods: ["GET", "POST","PUT","DELETE"]
     }
 })
