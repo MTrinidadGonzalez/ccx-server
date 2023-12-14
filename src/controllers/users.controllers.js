@@ -159,8 +159,9 @@ const deleteInactiveUser= async(req,res)=>{
 
   const postImgProfile = async (req, res) => {
     try{const uid= req.user.id
+        const urlDeploy= 'https://ccx-server.onrender.com'
        const filename= req.file.filename
-       const imgProfile= `${urlDocs}/${req.file.filename}?folder=profile`
+       const imgProfile= `${urlDeploy}/api/documents/${req.file.filename}?folder=profile`
        const response= await userServices.updateUserBy('email',req.user.email,{'imgProfile':imgProfile})
        const users= await userServices.getUsers()
         req.io.emit('getAllUsers',users)

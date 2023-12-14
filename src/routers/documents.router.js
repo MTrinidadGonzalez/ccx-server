@@ -12,12 +12,15 @@ export default class DocumentsRouter extends RouterPadre{
            
              const {filename}= req.params
              const { folder } = req.query || 'img'
+             console.log('en document router, dirname;', __dirname)
              const pathIMG= path.resolve(`${__dirname}/public/files/${folder}/${filename}`)
              const exist=  fs.existsSync(pathIMG)
              if(exist){
+                console.log('en router documentes, si existe:', exist)
                  res.sendFile(pathIMG)
              }
              else{
+                console.log('en router documentes,no encontro el documento')
                  res.send({status:'error', error: 'Documento no encontrado en el servidor'})
              }
            }

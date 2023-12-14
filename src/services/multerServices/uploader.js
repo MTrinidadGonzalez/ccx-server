@@ -6,6 +6,7 @@ import path from 'path'
 function createUploader(destinationFolder) {
     const storage = multer.diskStorage({
         destination: function (req, file, callback) {
+            console.log('en create oploader _dirname:', __dirname)
             const destinationPath = path.join(`${__dirname}/public/files/${destinationFolder}`)
             callback(null, destinationPath);
         },
