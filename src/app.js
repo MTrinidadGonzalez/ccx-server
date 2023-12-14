@@ -54,7 +54,7 @@ const io  = new Server(server,{
     }
 })
 app.use((req,res,next)=>{
-    //REFERENCIAR  io
+   
     req.io = io;
     next();
 })
