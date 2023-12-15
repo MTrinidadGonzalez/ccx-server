@@ -1,69 +1,39 @@
-import { Router } from "express";
-//import RouterPadre from '../routers/router.js'
-import path from 'path'
+import multer from 'multer'
 import __dirname from '../../utils.js'
-import fs from 'fs'
-
-const router= Router()
-router.get('/:filename', async (req, res)=> {
-    try {
-        // urlCompleta: http://localhost:8081/api/documents/1694297444243-59799a2e8ccd217019f2cc9d87f42af7.jpg?folder=products
-        console.log('file router llega la peticion')
-        const { filename } = req.params;
-        const { folder } = req.query || 'img';
-
-        const pathIMG = `/opt/render/project/src/src/public/files/${folder}/${filename}`;
-        console.log('file router pathIMG',pathIMG)
-        const exist = fs.existsSync(pathIMG);
-        console.log('file router exist',exist)
-
-        if (exist) {
-            console.log('file router existe el archivo y fue encontrado')
-            res.sendFile(pathIMG);
-        } else {
-            console.log('file router  no existe el archivo y no fue encontrado')
-            res.send({ status: 'error', error: 'Documento no encontrado en el servidor' });
-        }
-    } catch (error) {
-        console.log(error);
-    }
-});
-
-export default router
-
-
-
-/*import RouterPadre from '../routers/router.js'
 import path from 'path'
-import __dirname from '../utils.js'
-import fs from 'fs'
-
-export default class DocumentsRouter extends RouterPadre{
-    init(){
-
-        this.get('/:filename',["PUBLIC"],async (req,res)=>{
-           try{
-            //urlCompleta: http://localhost:8080/api/documents/1694297444243-59799a2e8ccd217019f2cc9d87f42af7.jpg?folder=products
+import fs from 'fs';
+/*
+function createUploader(destinationFolder) {
+    const storage = multer.diskStorage({
+        destination: function (req, file, callback) {
+           // const destinationPath = path.join(`${__dirname}/public/files/${destinationFolder}`)
+           const destinationPath = `/opt/render/project/src/src/public/files/${destinationFolder}`;
            
-             const {filename}= req.params
-             const { folder } = req.query || 'img'
-             console.log('en document router, dirname;', __dirname)
-             const pathIMG= path.resolve(`${__dirname}/public/files/${folder}/${filename}`)
-             const exist=  fs.existsSync(pathIMG)
-             if(exist){
-                console.log('en router documentes, si existe:', exist)
-                 res.sendFile(pathIMG)
-             }
-             else{
-                console.log('en router documentes,no encontro el documento')
-                 res.send({status:'error', error: 'Documento no encontrado en el servidor'})
-             }
-           }
-           catch(error){
-            console.log(error)
-           }
-        })
+           callback(null, destinationPath);
+        },
+        filename: function (req, file, callback) {
+            callback(null, `${Date.now()}-${file.originalname}`)
+        }
+    });
 
-
-    }//cierre del init
+    return multer({ storage })
 }*/
+function createUploader(destinationFolder) {
+    const storage = multer.diskStorage({
+        destination: function (req, file, callback) {
+            const destinationPath = `/opt/render/project/src/src/public/files/${destinationFolder}`;
+            if (!fs.existsSync(destinationPath)) {
+                fs.mkdirSync(destinationPath, { recursive: true });
+            }
+            callback(null, destinationPath);
+        },
+        filename: function (req, file, callback) {
+            callback(null, `${Date.now()}-${file.originalname}`);
+        }
+    });
+
+    return multer({ storage });
+}
+
+
+export default createUploader
