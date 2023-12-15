@@ -1,3 +1,4 @@
+//import createUploader from '../services/multerServices/uploader.js'
 import createUploader from '../services/multerServices/uploader.js'
 
 export const productsUploader = createUploader('products').single('img');

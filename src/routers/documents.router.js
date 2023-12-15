@@ -2,6 +2,7 @@ import RouterPadre from '../routers/router.js'
 import path from 'path'
 import __dirname from '../utils.js'
 import fs from 'fs'
+import { Router } from "express";
 
 
 const router= Router()
