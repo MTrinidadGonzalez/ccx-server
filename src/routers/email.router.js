@@ -1,4 +1,4 @@
-import RouterPadre from "./router.js";
+import RouterPadre from "../routers/router.js";
 import Dtemplates from '../constants/Dtemplates.js'
 import MailingService from '../mailService/mail.service.js'
 

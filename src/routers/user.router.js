@@ -1,6 +1,6 @@
 import { userServices} from '../services/services.js'
 import usersControllers from '../controllers/users.controllers.js'
-import RouterPadre from './router.js'
+import RouterPadre from '../routers/router.js'
 import {documentsUploader} from '../middlewares/multer.middleware.js'
 import {imgProfileUploader} from '../middlewares/multer.middleware.js'
 import sessionControllers from '../controllers/session.controllers.js'

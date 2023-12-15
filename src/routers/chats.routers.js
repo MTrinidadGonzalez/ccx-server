@@ -1,4 +1,4 @@
-import RouterPadre from './router.js'
+import RouterPadre from '../routers/router.js'
 import chatsControllers from '../controllers/chats.controllers.js'
 export default class ChatsRoute extends RouterPadre{
     init(){
