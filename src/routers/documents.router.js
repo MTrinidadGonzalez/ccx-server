@@ -12,9 +12,9 @@ router.get('/:filename', async (req, res)=> {
         console.log('file router llega la peticion')
         const { filename } = req.params;
         const { folder } = req.query || 'img';
-        // Modifica la construcción de la ruta para Render.com
+        console.log('document router _dirname',__dirname)
         const pathIMG = `/opt/render/project/src/src/public/files/${folder}/${filename}`;
-        console.log('file router pathIMG',pathIMG)
+        console.log('document router file pathIMG',pathIMG)
         const exist = fs.existsSync(pathIMG);
         console.log('file router exist',exist)
 
