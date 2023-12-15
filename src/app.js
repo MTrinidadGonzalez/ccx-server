@@ -114,11 +114,3 @@ app.use('/api/email', emailRouter.getRouter())
 
 
 app.use(errorHandler)
-
-
-
-
-
-
-
-

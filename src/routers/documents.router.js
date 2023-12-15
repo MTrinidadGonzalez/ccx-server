@@ -1,8 +1,8 @@
-import { Router } from "express";
 import RouterPadre from '../routers/router.js'
 import path from 'path'
 import __dirname from '../utils.js'
 import fs from 'fs'
+
 
 const router= Router()
 router.get('/:filename', async (req, res)=> {
