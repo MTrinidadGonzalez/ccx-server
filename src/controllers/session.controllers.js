@@ -55,9 +55,10 @@ const loginUser=async (req,res)=>{
           const exp= await userServices.updateUserExpiration(uid,expirationDate)
   
           res.cookie('authToken',accessToken, {
-              maxAge:1000*60*60*24,
-             // httpOnly:true,
-              sameSite:"none"
+            maxAge:1000*60*60*24,
+            // httpOnly:true,
+             sameSite:"none",
+             secure: true,
           }).send({status:'success', userrole:role})
       }
       }
