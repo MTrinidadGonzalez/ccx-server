@@ -33,7 +33,7 @@ const getProduct= async(req,res)=>{
 
 const postProduct= async(req,res)=>{
     try{
-
+        const urlDeploy= 'https://ccx-server.onrender.com'
         const useremail= req.user.email 
         const{title,description,price,category,talle,color}=req.body
          if(!title || !description || !price || !category ){
@@ -50,7 +50,7 @@ const postProduct= async(req,res)=>{
             description,
             price,
             category,
-            img: `${urlDocs}/${imgFileName}?folder=products`,
+            img: `${urlDeploy}/api/documents/${imgFileName}?folder=products`,
             talle,
             color,
             owner:useremail
