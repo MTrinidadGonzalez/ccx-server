@@ -8,13 +8,11 @@ import {validatePassword, createHash} from '../utils.js'
 
 const registerUser=async (req,res)=>{
  try{   
-  //console.log('req.user en registerController', req.user)
       if(req.error){
         console.log('req.error registerController', req.error)
         if(req.error === 'El usuario ya existe'){
           console.log('ya exite user register controller')
-       
-          res.send({status:'error', error:'Usuario ya registrado' })
+        return  res.send({status:'error', error:'Usuario ya registrado' })
         }
 
         if(req.error === 'No auth token'){
@@ -25,7 +23,7 @@ const registerUser=async (req,res)=>{
           //const trinigmail= 'mtgprimaria@gmail.com'
           //const mailingService= new MailingService()
           //const result= await mailingService.sendMail(userEmail, Dtemplates.WELCOME_REGISTERED,username)
-            res.send({status:'success', payload:req.user}) 
+          return  res.send({status:'success', payload:req.user}) 
         }
       }
     
