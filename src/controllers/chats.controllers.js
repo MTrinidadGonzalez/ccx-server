@@ -69,7 +69,7 @@ const getUserChats = async (req, res) => {
       }
     });
     req.io.emit('getRealTimeUserChats',infoChats)
-    res.send({ status: 'success' });
+    res.send({ status: 'success',payload:infoChats  });
  
   } catch (error) {
     console.log(error);
@@ -98,7 +98,7 @@ const getChat = async (req, res) => {
     };
 
     req.io.emit('getRealTimeChat', chatInfo);
-    res.send({ status: 'success' });
+    res.send({ status: 'success', payload:chatInfo });
 
   } catch (error) {
     console.log(error);
