@@ -17,7 +17,7 @@ const registerUser=async (req,res)=>{
 
         if(req.error === 'No auth token'){
           const user = await userServices.getUser('email',req.user.email)
-          req.io.emit('getRealTimeUserProfile',user)
+         // req.io.emit('getRealTimeUserProfile',user)
           //const userEmail= req.user.email
           //const username= req.user.first_name
           //const trinigmail= 'mtgprimaria@gmail.com'
